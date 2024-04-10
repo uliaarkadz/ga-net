@@ -1,0 +1,14 @@
+2024-03-19 17:56:13.572 -04:00 [DBG] Connection id "0HN227S0UKUMI" accepted.
+2024-03-19 17:56:13.576 -04:00 [DBG] Connection id "0HN227S0UKUMI" started.
+2024-03-19 17:56:13.598 -04:00 [DBG] Connection 0HN227S0UKUMI established using the following protocol: "Tls12"
+2024-03-19 17:56:13.762 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7282/favicon.ico - null null
+2024-03-19 17:56:13.769 -04:00 [DBG] The request path  does not match the path filter
+2024-03-19 17:56:13.770 -04:00 [DBG] No candidates found for the request path '/favicon.ico'
+2024-03-19 17:56:13.771 -04:00 [DBG] Request did not match any endpoints
+2024-03-19 17:56:13.775 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7282/favicon.ico - 404 0 null 12.2017ms
+2024-03-19 17:56:13.775 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7282/favicon.ico, Response status code: 404
+2024-03-19 17:58:47.129 -04:00 [DBG] Connection id "0HN227S0UKUMI" received FIN.
+2024-03-19 17:58:47.139 -04:00 [DBG] Connection id "0HN227S0UKUMI" is closed. The last processed stream ID was 1.
+2024-03-19 17:58:47.164 -04:00 [DBG] Connection id "0HN227S0UKUMI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-19 17:58:47.164 -04:00 [DBG] The connection queue processing loop for 0HN227S0UKUMI completed.
+2024-03-19 17:58:47.165 -04:00 [DBG] Connection id "0HN227S0UKUMI" stopped.

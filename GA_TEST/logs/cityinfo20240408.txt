@@ -1,0 +1,104 @@
+2024-04-08 18:10:34.977 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-08 18:10:35.010 -04:00 [DBG] Hosting starting
+2024-04-08 18:10:35.094 -04:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 87FED1B2A658EA0B57EF25B7E779EEDFE8EBDF3C)
+2024-04-08 18:10:35.102 -04:00 [INF] Now listening on: https://localhost:8081
+2024-04-08 18:10:35.126 -04:00 [INF] Now listening on: http://localhost:6000
+2024-04-08 18:10:35.126 -04:00 [DBG] Loaded hosting startup assembly GA_TEST
+2024-04-08 18:10:35.126 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-08 18:10:35.126 -04:00 [INF] Hosting environment: Development
+2024-04-08 18:10:35.126 -04:00 [INF] Content root path: /Users/ulia/Projects/GA_TEST/GA_TEST
+2024-04-08 18:10:35.126 -04:00 [DBG] Hosting started
+2024-04-08 18:10:41.368 -04:00 [DBG] Connection id "0HN2O32TAC2PL" received FIN.
+2024-04-08 18:10:41.376 -04:00 [DBG] Connection id "0HN2O32TAC2PL" accepted.
+2024-04-08 18:10:41.377 -04:00 [DBG] Connection id "0HN2O32TAC2PL" started.
+2024-04-08 18:10:41.379 -04:00 [DBG] Connection id "0HN2O32TAC2PM" accepted.
+2024-04-08 18:10:41.379 -04:00 [DBG] Connection id "0HN2O32TAC2PM" started.
+2024-04-08 18:10:41.381 -04:00 [DBG] Connection id "0HN2O32TAC2PL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-08 18:10:41.386 -04:00 [DBG] Connection id "0HN2O32TAC2PL" disconnecting.
+2024-04-08 18:10:41.387 -04:00 [DBG] Connection id "0HN2O32TAC2PL" stopped.
+2024-04-08 18:10:41.399 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:6000/api/cities - null null
+2024-04-08 18:10:41.400 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-08 18:10:41.411 -04:00 [DBG] The request path  does not match the path filter
+2024-04-08 18:10:41.412 -04:00 [DBG] Https port '8081' discovered from server endpoints.
+2024-04-08 18:10:41.413 -04:00 [DBG] Redirecting to 'https://localhost:8081/api/cities'.
+2024-04-08 18:10:41.414 -04:00 [DBG] Connection id "0HN2O32TAC2PM" completed keep alive response.
+2024-04-08 18:10:41.414 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:6000/api/cities - 307 0 null 17.1108ms
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PN" received FIN.
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PN" accepted.
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PO" accepted.
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PO" started.
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PN" started.
+2024-04-08 18:10:41.419 -04:00 [DBG] Connection id "0HN2O32TAC2PN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-08 18:10:41.421 -04:00 [DBG] Connection id "0HN2O32TAC2PN" disconnecting.
+2024-04-08 18:10:41.421 -04:00 [DBG] Connection id "0HN2O32TAC2PN" stopped.
+2024-04-08 18:10:41.459 -04:00 [DBG] Connection 0HN2O32TAC2PO established using the following protocol: "Tls12"
+2024-04-08 18:10:41.461 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:8081/api/cities - null null
+2024-04-08 18:10:41.462 -04:00 [DBG] The request path  does not match the path filter
+2024-04-08 18:10:41.469 -04:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2024-04-08 18:10:41.470 -04:00 [DBG] Endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2024-04-08 18:10:41.470 -04:00 [DBG] Request matched endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-04-08 18:10:41.471 -04:00 [INF] Executing endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-04-08 18:10:41.480 -04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GA_TEST.Models.CityWithoutPointsOfInterestDto]]] GetCities() on controller GA_TEST.Controllers.CityController (GA_TEST).
+2024-04-08 18:10:41.480 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-08 18:10:41.480 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-08 18:10:41.481 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-08 18:10:41.481 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-08 18:10:41.481 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-08 18:10:41.481 -04:00 [DBG] Executing controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-04-08 18:10:41.538 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-04-08 18:10:41.580 -04:00 [DBG] Executed controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-04-08 18:10:44.957 -04:00 [DBG] Entity Framework Core 8.0.3 initialized 'CityInfoContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.2+5a671b9769f2d00a75b0ba42ce30c444a12407e3' with options: None
+2024-04-08 18:10:44.967 -04:00 [DBG] Compiling query expression: 
+'DbSet<City>()
+    .OrderBy(c => c.Name)'
+2024-04-08 18:10:45.033 -04:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<City>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: City.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: City.Description (string) MaxLength(200), 1], [Property: City.Name (string) Required MaxLength(50), 2] }
+        SELECT c.Id, c.Description, c.Name
+        FROM Cities AS c
+        ORDER BY c.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, City>, 
+    GA_TEST.DbContexts.CityInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2024-04-08 18:10:45.043 -04:00 [DBG] Creating DbConnection.
+2024-04-08 18:10:45.056 -04:00 [DBG] Created DbConnection. (13ms).
+2024-04-08 18:10:45.057 -04:00 [DBG] Opening connection to database 'CITYINFO' on server 'tcp://localhost:5433'.
+2024-04-08 18:10:45.133 -04:00 [DBG] Opened connection to database 'CITYINFO' on server 'tcp://localhost:5433'.
+2024-04-08 18:10:45.134 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-04-08 18:10:45.136 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-04-08 18:10:45.136 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-04-08 18:10:45.139 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Description", c."Name"
+FROM "Cities" AS c
+ORDER BY c."Name"
+2024-04-08 18:10:45.150 -04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Description", c."Name"
+FROM "Cities" AS c
+ORDER BY c."Name"
+2024-04-08 18:10:45.178 -04:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-08 18:10:45.183 -04:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-08 18:10:45.183 -04:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-04-08 18:10:45.184 -04:00 [DBG] Closing data reader to 'CITYINFO' on server 'tcp://localhost:5433'.
+2024-04-08 18:10:45.187 -04:00 [DBG] A data reader for 'CITYINFO' on server 'tcp://localhost:5433' is being disposed after spending 35ms reading results.
+2024-04-08 18:10:45.188 -04:00 [DBG] Closing connection to database 'CITYINFO' on server 'tcp://localhost:5433'.
+2024-04-08 18:10:45.189 -04:00 [DBG] Closed connection to database 'CITYINFO' on server 'tcp://localhost:5433' (1ms).
+2024-04-08 18:10:45.195 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-04-08 18:10:45.196 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-08 18:10:45.196 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-08 18:10:45.196 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-08 18:10:45.196 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-08 18:10:45.196 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GA_TEST.Models.CityWithoutPointsOfInterestDto, GA_TEST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-08 18:10:45.234 -04:00 [INF] Executed action GA_TEST.Controllers.CityController.GetCities (GA_TEST) in 3751.9986ms
+2024-04-08 18:10:45.234 -04:00 [INF] Executed endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-04-08 18:10:45.235 -04:00 [DBG] Connection id "0HN2O32TAC2PO" completed keep alive response.
+2024-04-08 18:10:45.235 -04:00 [DBG] 'CityInfoContext' disposed.
+2024-04-08 18:10:45.236 -04:00 [DBG] Disposing connection to database 'CITYINFO' on server 'tcp://localhost:5433'.
+2024-04-08 18:10:45.237 -04:00 [DBG] Disposed connection to database 'CITYINFO' on server 'tcp://localhost:5433' (0ms).
+2024-04-08 18:10:45.237 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:8081/api/cities - 200 190 application/json; charset=utf-8 3775.7736ms

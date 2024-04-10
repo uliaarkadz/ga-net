@@ -1,0 +1,169 @@
+2024-03-11 22:43:09.882 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 22:43:09.931 -04:00 [DBG] Hosting starting
+2024-03-11 22:43:10.077 -04:00 [INF] Now listening on: https://localhost:7282
+2024-03-11 22:43:10.077 -04:00 [INF] Now listening on: http://localhost:5290
+2024-03-11 22:43:10.077 -04:00 [DBG] Loaded hosting startup assembly GA_TEST
+2024-03-11 22:43:10.077 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 22:43:10.078 -04:00 [INF] Hosting environment: Development
+2024-03-11 22:43:10.078 -04:00 [INF] Content root path: /Users/ulia/Projects/GA_TEST/GA_TEST
+2024-03-11 22:43:10.078 -04:00 [DBG] Hosting started
+2024-03-11 22:43:22.726 -04:00 [DBG] Connection id "0HN227ONJCJ45" received FIN.
+2024-03-11 22:43:22.732 -04:00 [DBG] Connection id "0HN227ONJCJ45" accepted.
+2024-03-11 22:43:22.733 -04:00 [DBG] Connection id "0HN227ONJCJ45" started.
+2024-03-11 22:43:22.735 -04:00 [DBG] Connection id "0HN227ONJCJ46" accepted.
+2024-03-11 22:43:22.735 -04:00 [DBG] Connection id "0HN227ONJCJ46" started.
+2024-03-11 22:43:22.747 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-11 22:43:22.766 -04:00 [DBG] Connection id "0HN227ONJCJ45" stopped.
+2024-03-11 22:43:22.768 -04:00 [DBG] Connection id "0HN227ONJCJ45" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 22:43:22.773 -04:00 [DBG] Connection 0HN227ONJCJ46 established using the following protocol: "Tls12"
+2024-03-11 22:43:22.793 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7282/api/cities - null null
+2024-03-11 22:43:22.794 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-11 22:43:22.802 -04:00 [DBG] The request path  does not match the path filter
+2024-03-11 22:43:22.808 -04:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2024-03-11 22:43:22.809 -04:00 [DBG] Endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2024-03-11 22:43:22.809 -04:00 [DBG] Request matched endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:43:22.810 -04:00 [INF] Executing endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:43:22.817 -04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GA_TEST.Models.CityWithoutPointsOfInterestDto]]] GetCities() on controller GA_TEST.Controllers.CityController (GA_TEST).
+2024-03-11 22:43:22.817 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 22:43:22.817 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 22:43:22.818 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 22:43:22.818 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 22:43:22.818 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 22:43:22.818 -04:00 [DBG] Executing controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:43:22.844 -04:00 [DBG] Executed controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:43:23.157 -04:00 [INF] Executed action GA_TEST.Controllers.CityController.GetCities (GA_TEST) in 338.1029ms
+2024-03-11 22:43:23.158 -04:00 [INF] Executed endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:43:23.159 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<GA_TEST.Entities.City>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at GA_TEST.Services.CityInfoRepository.GetCitiesAsync() in /Users/ulia/Projects/GA_TEST/GA_TEST/Services/CityInfoRepository.cs:line 19
+   at GA_TEST.Controllers.CityController.GetCities() in /Users/ulia/Projects/GA_TEST/GA_TEST/Controllers/CityController.cs:line 21
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-11 22:43:23.169 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-03-11 22:43:23.169 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 22:43:23.169 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml"]'.
+2024-03-11 22:43:23.169 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-03-11 22:43:23.228 -04:00 [DBG] Connection id "0HN227ONJCJ46" completed keep alive response.
+2024-03-11 22:43:23.230 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7282/api/cities - 500 480 application/problem+json; charset=utf-8 437.3184ms
+2024-03-11 22:47:06.686 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7282/api/cities - null null
+2024-03-11 22:47:06.692 -04:00 [DBG] The request path  does not match the path filter
+2024-03-11 22:47:06.692 -04:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2024-03-11 22:47:06.692 -04:00 [DBG] Endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2024-03-11 22:47:06.692 -04:00 [DBG] Request matched endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:47:06.693 -04:00 [INF] Executing endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:47:06.693 -04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GA_TEST.Models.CityWithoutPointsOfInterestDto]]] GetCities() on controller GA_TEST.Controllers.CityController (GA_TEST).
+2024-03-11 22:47:06.693 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 22:47:06.693 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 22:47:06.693 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 22:47:06.694 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 22:47:06.694 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 22:47:06.694 -04:00 [DBG] Executing controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:47:06.697 -04:00 [DBG] Executed controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:47:06.832 -04:00 [INF] Executed action GA_TEST.Controllers.CityController.GetCities (GA_TEST) in 138.4081ms
+2024-03-11 22:47:06.833 -04:00 [INF] Executed endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:47:06.833 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<GA_TEST.Entities.City>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at GA_TEST.Services.CityInfoRepository.GetCitiesAsync() in /Users/ulia/Projects/GA_TEST/GA_TEST/Services/CityInfoRepository.cs:line 19
+   at GA_TEST.Controllers.CityController.GetCities() in /Users/ulia/Projects/GA_TEST/GA_TEST/Controllers/CityController.cs:line 21
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-03-11 22:47:06.835 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-03-11 22:47:06.836 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 22:47:06.836 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml"]'.
+2024-03-11 22:47:06.836 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-03-11 22:47:06.836 -04:00 [DBG] Connection id "0HN227ONJCJ46" completed keep alive response.
+2024-03-11 22:47:06.837 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7282/api/cities - 500 480 application/problem+json; charset=utf-8 150.7372ms
+2024-03-11 22:47:37.593 -04:00 [DBG] Connection id "0HN227ONJCJ47" accepted.
+2024-03-11 22:47:37.593 -04:00 [DBG] Connection id "0HN227ONJCJ47" started.
+2024-03-11 22:47:37.652 -04:00 [DBG] Connection 0HN227ONJCJ47 established using the following protocol: "Tls12"
+2024-03-11 22:47:37.678 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7282/ - null null
+2024-03-11 22:47:37.727 -04:00 [DBG] The request path  does not match the path filter
+2024-03-11 22:47:37.727 -04:00 [DBG] No candidates found for the request path '/'
+2024-03-11 22:47:37.728 -04:00 [DBG] Request did not match any endpoints
+2024-03-11 22:47:37.730 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7282/ - 404 0 null 51.457ms
+2024-03-11 22:47:37.731 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7282/, Response status code: 404
+2024-03-11 22:49:14.000 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 22:49:14.051 -04:00 [DBG] Hosting starting
+2024-03-11 22:49:14.201 -04:00 [INF] Now listening on: https://localhost:7282
+2024-03-11 22:49:14.201 -04:00 [INF] Now listening on: http://localhost:5290
+2024-03-11 22:49:14.201 -04:00 [DBG] Loaded hosting startup assembly GA_TEST
+2024-03-11 22:49:14.201 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 22:49:14.202 -04:00 [INF] Hosting environment: Development
+2024-03-11 22:49:14.202 -04:00 [INF] Content root path: /Users/ulia/Projects/GA_TEST/GA_TEST
+2024-03-11 22:49:14.202 -04:00 [DBG] Hosting started
+2024-03-11 22:49:16.228 -04:00 [DBG] Connection id "0HN227S0UKUMF" received FIN.
+2024-03-11 22:49:16.234 -04:00 [DBG] Connection id "0HN227S0UKUMF" accepted.
+2024-03-11 22:49:16.235 -04:00 [DBG] Connection id "0HN227S0UKUMF" started.
+2024-03-11 22:49:16.236 -04:00 [DBG] Connection id "0HN227S0UKUMG" accepted.
+2024-03-11 22:49:16.236 -04:00 [DBG] Connection id "0HN227S0UKUMG" started.
+2024-03-11 22:49:16.248 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-11 22:49:16.265 -04:00 [DBG] Connection id "0HN227S0UKUMF" stopped.
+2024-03-11 22:49:16.268 -04:00 [DBG] Connection id "0HN227S0UKUMF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 22:49:16.300 -04:00 [DBG] Connection 0HN227S0UKUMG established using the following protocol: "Tls12"
+2024-03-11 22:49:16.318 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7282/api/cities - null null
+2024-03-11 22:49:16.322 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-11 22:49:16.329 -04:00 [DBG] The request path  does not match the path filter
+2024-03-11 22:49:16.336 -04:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2024-03-11 22:49:16.336 -04:00 [DBG] Endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2024-03-11 22:49:16.337 -04:00 [DBG] Request matched endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:49:16.338 -04:00 [INF] Executing endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:49:16.344 -04:00 [INF] Route matched with {action = "GetCities", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[GA_TEST.Models.CityWithoutPointsOfInterestDto]]] GetCities() on controller GA_TEST.Controllers.CityController (GA_TEST).
+2024-03-11 22:49:16.344 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 22:49:16.345 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 22:49:16.345 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 22:49:16.345 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 22:49:16.345 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 22:49:16.345 -04:00 [DBG] Executing controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:49:16.367 -04:00 [DBG] Executed controller factory for controller GA_TEST.Controllers.CityController (GA_TEST)
+2024-03-11 22:49:16.704 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-03-11 22:49:16.704 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 22:49:16.704 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 22:49:16.704 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 22:49:16.704 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 22:49:16.705 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[GA_TEST.Models.CityWithoutPointsOfInterestDto, GA_TEST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 22:49:16.752 -04:00 [INF] Executed action GA_TEST.Controllers.CityController.GetCities (GA_TEST) in 405.7005ms
+2024-03-11 22:49:16.753 -04:00 [INF] Executed endpoint 'GA_TEST.Controllers.CityController.GetCities (GA_TEST)'
+2024-03-11 22:49:16.753 -04:00 [DBG] Connection id "0HN227S0UKUMG" completed keep alive response.
+2024-03-11 22:49:16.755 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7282/api/cities - 200 190 application/json; charset=utf-8 437.9571ms

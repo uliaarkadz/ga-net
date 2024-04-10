@@ -1,0 +1,8 @@
+2024-03-12 18:43:18.324 -04:00 [DBG] Connection id "0HN227S0UKUMH" accepted.
+2024-03-12 18:43:18.353 -04:00 [DBG] Connection id "0HN227S0UKUMH" started.
+2024-03-12 18:43:18.374 -04:00 [DBG] Connection 0HN227S0UKUMH established using the following protocol: "Tls12"
+2024-03-12 18:44:21.962 -04:00 [DBG] Connection id "0HN227S0UKUMH" received FIN.
+2024-03-12 18:44:21.977 -04:00 [DBG] Connection id "0HN227S0UKUMH" is closed. The last processed stream ID was 0.
+2024-03-12 18:44:21.977 -04:00 [DBG] The connection queue processing loop for 0HN227S0UKUMH completed.
+2024-03-12 18:44:21.977 -04:00 [DBG] Connection id "0HN227S0UKUMH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-12 18:44:21.980 -04:00 [DBG] Connection id "0HN227S0UKUMH" stopped.
